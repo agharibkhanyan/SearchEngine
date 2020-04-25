@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Whats GOOGLE??</title>
+		<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/main.css') }}">
+	</head>
+
+	<body>
+		<div class="header">
+			<form action="/query" method="POST">
+				<h1 style="color:white;"> Test my speed?
+				</h1>
+					<div class ="form-box">
+
+					<input type="text" name="query" class="search-field business" placeholder="Whats on your mind?">
+						<button class="search-btn" type="submit">Search</button>
+
+					</div>
+			</form>
+		</div>
+
+
+	</body>
+</html>

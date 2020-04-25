@@ -1,0 +1,29 @@
+Notes on running our program:
+- Run hybridIndexer.py to create first pass of index
+- Run tfidfIndexer.py to create final pass of index
+- Run main.py in /website to run search engine, click link of IP address printed in terminal.
+
+
+Bad Queries:
+1) {Apathy,Apes} 0.00302 secs irrelevant queries
+2) {Bernie,Sanders,super,tuesday} 0.0386 secs irrelevant queries
+3) {UCI,undergraduate} 0.0785 secs long time
+4) {UCI,undergraduates, housing, costs} 0.068 secs long time and irrelevant queries
+5) {UCI,undergraduate, research} 0.08secs long time
+6) {} traceback error.
+7) {ics,slides} 0.06 secs irrelevant results on second query
+8) {student,housing} 0.06 secs irrelevant results
+9) {biology,classes} 0.019 secs irrelevant results
+10) {financial,aid,office,opening,hours} 0.054 secs irrlevant results
+
+Good Queries:
+1) {Coronavirus,Lethality} 0.002 secs Fast and empty as expected
+2) {Jason,Heckard} 0.008 secs Fast and relevant result
+3) {UCI,ICS,undergraduates} 0.088 secs Slow but relevant results
+4) {database,class} 0.06 secs Slow but relevant results
+5) {eppstein,pictures} 0.024 fast and relevant results
+6) {ics,uci} 0.07205 secs long time but relevant results
+7) {1341974625} 0.004 secs really fast, empty as expected
+8) {mysql,carey,mike} 0.033 secs and relevant results
+9) {informatics,uci} 0.086 secs slow but relevant queries
+10) {michael,carey} 0.021 secs and relevant query

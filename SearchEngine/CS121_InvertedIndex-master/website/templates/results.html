@@ -1,0 +1,20 @@
+
+
+<html>
+	<head>
+		<title>Query Results</title>
+	</head>
+
+	<body >
+		<h1 style="align-content: center">Query Results</h1>
+		<h3>User Query: {{query}}</h3>
+		 <ol>
+		    
+		    {% for n in urls %}
+            <li style="margin-top: 15px">url: <a href="{{n}}">{{n}}</a></li>
+		    <hr style="color: red "align="left" width="50%" > 
+		    {% endfor %}
+		 </ol>
+	</body>
+	
+</html>
